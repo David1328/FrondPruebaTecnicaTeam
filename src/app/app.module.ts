@@ -7,11 +7,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OfertasComponetComponent } from './pages/ofertas-componet/ofertas-componet.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { AgregarOfertaComponent } from './pages/agregar-oferta/agregar-oferta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OfertasComponetComponent,
+    AgregarOfertaComponent,
   ],
   imports: [
     BrowserModule,

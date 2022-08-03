@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  //url de la API
   HOST: 'http://localhost:8080/prueba-tecnica/api/',
   production: false
 };

@@ -1,5 +1,24 @@
+/*
+That div si for all the table and the button
+using flex-box
+*/
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+/* Desing for the table */
 table {
     width: 80%;
     position: static;
     margin: auto;
+    margin-top: 2%;
+}
+/* Desing for the button by a new offert */
+.newOffertButton{
+    width: 20%;
+    margin:auto;
+    margin-top: 2%;
+    position: static;
+    font-size: 1.7vw;
 }
