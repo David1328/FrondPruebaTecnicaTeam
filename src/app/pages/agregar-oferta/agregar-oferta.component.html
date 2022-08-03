@@ -1,0 +1,23 @@
+<div mat-dialog-content>
+    <p>NUEVA OFERTA</p>
+</div>
+<form [formGroup]="form_nuevaOferta" #frmOferta="ngForm" class="form-inline">
+    <div class="campo_texto">
+        <mat-form-field appearance="outline" class="tamano">
+            <input ngModel matInput placeholder="Televisor" formControlName="name" />
+        </mat-form-field>
+    </div>
+    <div class="campo_texto">
+        <mat-form-field appearance="outline" class="tamano">
+            <input ngModel matInput placeholder="De 32 pulgadas con Android" formControlName="description" />
+        </mat-form-field>
+    </div>
+    <div class="campo_texto">
+        <mat-form-field appearance="outline" class="tamano">
+            <input ngModel matInput type="number" placeholder="5000000" formControlName="price_value" />
+        </mat-form-field>
+    </div>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button type="submit" mat-raised-button [disabled]="frmOferta.invalid" 
+    [mat-dialog-close]="true" (click)="enviarNuevaOferta()" cdkFocusInitial>Enviar nueva Oferta</button>
+</form>
