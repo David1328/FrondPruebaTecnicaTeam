@@ -1,1 +1,17 @@
-<p>ofertas-componet works!</p>
+<div mat-dialog-content>
+    <p>What's your favorite animal?</p>
+</div>
+<form [formGroup]="form_recuperar" #frmActividad="ngForm" class="form-inline">
+    <div class="campo_texto">
+        <mat-form-field appearance="outline" class="tamano">
+            <input type="email" ngModel email="true" matInput placeholder="Correo" formControlName="correo"
+                type="email" />
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">No Thanks</button>
+        <button  type="submit" mat-raised-button [disabled]="form_recuperar.invalid"
+            [mat-dialog-close]="true"  (click)="onNoClick()" cdkFocusInitial>Enviar mis datos</button>
+        <!--(click)="enviarDatos($event)"-->
+    </div>
+</form>
